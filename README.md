@@ -1,5 +1,5 @@
 <h1>#1 - Danny's Diner🍽️</h1>
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/Schema_diagram.png">
 <h1>Contents</h1>
 <ul>
   <li><a href="#INTRODUCTION">Introduction</a></li>
