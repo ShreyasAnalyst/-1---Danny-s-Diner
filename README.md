@@ -37,6 +37,7 @@ You can inspect the entity relationship diagram and example data below.<p>
 <h1><a id="case-study">Case Study Questions & Solutions</a></h1>
 
 <ol>
+	
   <li><h5>What is the total amount each customer spent at the restaurant?</h5></li>
 	
 ```sql
