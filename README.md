@@ -3,11 +3,11 @@
 <h1>Contents</h1>
 <ul>
   <li><a href="INTRODUCTION">Introduction</a></li>
-  <li><a href="PROBLEM STATEMENT">Problem Statement</a></li>
-  <li><a href="ENTITY RELATIONSHIP DIAGRAM">Entity Relationship Diagram</a></li>
-  <li><a href="CASE STUDY QUESTIONS WITH SOLUTIONS">Case Study Questions & Solutions</a></li>
-  <li><a href="BONUS QUESTIONS WITH SOLUTIONS">Bonus Questions & Solutions</a></li>
-  <li><a href="INSIGHTS FOUND">Key Insights</a></li>
+  <li><a href="PROBLEM-STATEMENT">Problem Statement</a></li>
+  <li><a href="ENTITY-RELATIONSHIP-DIAGRAM">Entity Relationship Diagram</a></li>
+  <li><a href="CASE-STUDY-QUESTIONS-WITH-SOLUTIONS">Case Study Questions & Solutions</a></li>
+  <li><a href="BONUS-QUESTIONS-WITH-SOLUTIONS">Bonus Questions & Solutions</a></li>
+  <li><a href="INSIGHTS">Key Insights</a></li>
 </ul>
 
 <h1><a id="INTRODUCTION">Introduction</a></h1>
@@ -16,7 +16,7 @@
 Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
 </p>
 
-<h1><a id="PROBLEM STATEMENT">Problem Statement</a></h1>
+<h1><a id="PROBLEM-STATEMENT">Problem Statement</a></h1>
 <p>Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favorite. Having this deeper connection with his customers will help him deliver a better and more personalized experience for his loyal customers.
 
 He plans on using these insights to help him decide whether he should expand the existing customer loyalty program - additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL.
@@ -31,11 +31,11 @@ Danny has shared with you 3 key datasets for this case study:
 
 You can inspect the entity relationship diagram and example data below.<p>
 
-<h1><a id="ENTITY RELATIONSHIP DIAGRAM">Problem Statement</a></h1>
+<h1><a id="ENTITY-RELATIONSHIP-DIAGRAM">Problem Statement</a></h1>
 <img width="500" alt="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/Schema_diagram.png">
 
 
-<h1><a id="CASE STUDY QUESTIONS WITH SOLUTIONS">Problem Statement</a></h1>
+<h1><a id="CASE-STUDY-QUESTIONS-WITH-SOLUTIONS">Problem Statement</a></h1>
 
 <ol>
   <li><h5>What is the total amount each customer spent at the restaurant?</h5></li>
