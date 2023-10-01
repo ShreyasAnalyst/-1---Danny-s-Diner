@@ -279,6 +279,21 @@ ORDER BY points DESC;
 
 <img width="500" alt="Coding" src="">
 
+<ul>
+  <li>The query begins by selecting data from the <code>"menu"</code> table (aliased as <code>'m'</code>) and the <code>"sales"</code> table (aliased as <code>'s'</code>).</li>
+  <li>It uses a <code>JOIN</code> clause to combine data from these two tables, matching records based on the <code>"product_id"</code> column.</li>
+  <li>The query then calculates the number of points for each customer using a <code>CASE</code> statement:
+    <ul>
+      <li>If the <code>"product_name"</code> is 'sushi', it applies a 2x points multiplier by multiplying the <code>"price"</code> by 10 and then by 2.</li>
+      <li>For all other products, it calculates points by multiplying the <code>"price"</code> by 10 (assuming each $1 spent equates to 10 points).</li>
+    </ul>
+  </li>
+  <li>The <code>SUM()</code> function is used to add up the points for each customer.</li>
+  <li>The result set is grouped by <code>"customer_id"</code> (<code>GROUP BY 1</code>), ensuring that the total points are calculated for each unique customer.</li>
+  <li>The result is ordered in descending order based on the <code>"points"</code> column (<code>ORDER BY points DESC</code>), so customers with the most points appear at the top of the result set.</li>
+</ul>
+
+
 <li><h5>In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi how many points do customer A and B have at the end of January?</h5></li>
 
 ```sql
@@ -344,13 +359,14 @@ ORDER BY 1,2,3;
 
 <ul>
   <li>The query retrieves data from three tables: <code>"sales"</code> (aliased as <code>'s'</code>), <code>"menu"</code> (aliased as <code>'m'</code>), and <code>"members"</code> (aliased as <code>'mm'</code>).</li>
-  <li>It joins these tables using different join types:
-    - <code>JOIN menu m ON s.product_id = m.product_id</code>: This inner join links the <code>"sales"</code> and <code>"menu"</code> tables based on the <code>"product_id"</code> column to retrieve product-related information for each sale.
-    - <code>LEFT JOIN members mm ON s.customer_id = mm.customer_id</code>: This left join connects the <code>"sales"</code> and <code>"members"</code> tables based on the <code>"customer_id"</code> column, allowing us to determine whether a customer is a member.</li>
-  <li>The <code>CASE</code> statement is used to determine the membership status ("<code>member</code>" column) for each customer based on the following conditions:
-    - If there is no matching join with the "<code>members</code>" table (<code>mm.join_date IS NULL</code>), the customer is marked as 'N' (not a member).
-    - If the order date is earlier than the join date (<code>s.order_date < mm.join_date</code>), the customer is also marked as 'N' (not a member).
-    - Otherwise, the customer is marked as 'Y' (a member).</li>
+  <li>It joins these tables using different join types:<li>
+    <li>- <code>JOIN menu m ON s.product_id = m.product_id</code>:<li> 
+	<li>This inner join links the <code>"sales"</code> and <code>"menu"</code> tables based on the <code>"product_id"</code> column to retrieve product-related information for each sale.<li>
+    <li>- <code>LEFT JOIN members mm ON s.customer_id = mm.customer_id</code>: This left join connects the <code>"sales"</code> and <code>"members"</code> tables based on the <code>"customer_id"</code> column, allowing us to determine whether a customer is a member.</li>
+  <li>The <code>CASE</code> statement is used to determine the membership status ("<code>member</code>" column) for each customer based on the following conditions:<li>
+    <li>- If there is no matching join with the "<code>members</code>" table (<code>mm.join_date IS NULL</code>), the customer is marked as 'N' (not a member).<li>
+    <li>- If the order date is earlier than the join date (<code>s.order_date < mm.join_date</code>), the customer is also marked as 'N' (not a member).<li>
+    <li>- Otherwise, the customer is marked as 'Y' (a member).<li>
   <li>The result set includes columns for "<code>customer_id</code>," "<code>order_date</code>," "<code>product_name</code>," "<code>price</code>," and "<code>member</code>."</li>
   <li>The result is ordered by "<code>customer_id</code>," "<code>order_date</code>," and "<code>product_name</code>" to present the data in a structured manner.</li>
 </ul>
