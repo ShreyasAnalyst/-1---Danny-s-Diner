@@ -58,11 +58,6 @@ ORDER BY 2 DESC;
   <li>The <code>SUM(m.price)</code> function is used to calculate the total amount spent by each customer. It sums up the <code>"price"</code> column from the <code>"menu"</code> table for each customer's purchases.</li>
   <li>The result set is grouped by the <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the total amount spent for each unique customer.</li>
   <li>The result is then ordered in descending order based on the <code>"amount_spent"</code> column (<code>ORDER BY 2 DESC</code>), so the customers who spent the most appear at the top of the result set.</li>
-  <li>The query begins by selecting data from the <code>"sales"</code> table.</li>
-  <li>It uses the <code>COUNT(DISTINCT order_date)</code> function to count the number of distinct order dates for each customer. This essentially counts how many different days each customer has visited the restaurant.</li>
-  <li>The result set is grouped by the <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the count of distinct order dates for each unique customer.</li>
-  <li>The result is then ordered in descending order based on the <code>"days_visited"</code> column (<code>ORDER BY 2 DESC</code>), so customers who have visited the most days appear at the top of the result set.</li>
-</ul>
 
 <li><h5>How many days has each customer visited the restaurant?</h5></li>
 
