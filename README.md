@@ -31,7 +31,7 @@ Danny has shared with you 3 key datasets for this case study:
 
 You can inspect the entity relationship diagram and example data below.<p>
 
-<h1><a id="entity-relationship">Problem Statement</a></h1>
+<h1><a id="entity-relationship">Entity Relationship Diagram</a></h1>
 <img width="500" alt="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/Schema_diagram.png">
 
 
@@ -304,7 +304,7 @@ ORDER BY points DESC;
   <li>The result is ordered in descending order based on the <code>"points"</code> column (<code>ORDER BY points DESC</code>), so customers with the most points appear at the top of the result set.</li>
 </ul>
 
-<h1><a id="bonus-questio">BONUS QUESTIONS WITH SOLUTIONS</a></h1>
+<h1><a id="bonus-question">BONUS QUESTIONS WITH SOLUTIONS</a></h1>
 
 <ol>
 
