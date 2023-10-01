@@ -407,6 +407,17 @@ FROM
 	CTE;
 ```
 
+<ul>
+  <li>This query builds on the previous query and adds ranking information for customer purchases made by members.</li>
+  <li>It starts by defining a Common Table Expression (CTE) named "<code>CTE</code>," which retrieves data from the <code>"sales"</code> (aliased as <code>'s'</code>), <code>"menu"</code> (aliased as <code>'m'</code>), and <code>"members"</code> (aliased as <code>'mm'</code>) tables, joining them as before.</li>
+  <li>The <code>CASE</code> statement in the CTE calculates the membership status ("<code>member</code>" column) for each customer based on the same conditions as before.</li>
+  <li>The result set from the CTE is ordered by "<code>customer_id</code>," "<code>order_date</code>," and "<code>product_name</code>."</li>
+  <li>In the main query, an additional <code>CASE</code> statement is used to calculate the ranking for purchases made by members. The ranking is determined using the <code>ROW_NUMBER()</code> window function, which assigns a ranking within each partition of "<code>customer_id</code>" and "<code>member</code>," ordered by "<code>order_date</code>."</li>
+  <li>If the customer is not a member (<code>member = 'N'</code>), the ranking is set to NULL.</li>
+  <li>The result set includes all columns from the CTE and the "<code>ranking</code>" column.</li>
+</ul>
+
+
 <img width="500" alt="Coding" src="">
 
 <h1><a id="insights">Key Insights</a></h1>
