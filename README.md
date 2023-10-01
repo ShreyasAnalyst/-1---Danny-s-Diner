@@ -359,17 +359,23 @@ ORDER BY 1,2,3;
 
 <ul>
   <li>The query retrieves data from three tables: <code>"sales"</code> (aliased as <code>'s'</code>), <code>"menu"</code> (aliased as <code>'m'</code>), and <code>"members"</code> (aliased as <code>'mm'</code>).</li>
-  <li>It joins these tables using different join types:<li>
-    <li>- <code>JOIN menu m ON s.product_id = m.product_id</code>:<li> 
-	<li>This inner join links the <code>"sales"</code> and <code>"menu"</code> tables based on the <code>"product_id"</code> column to retrieve product-related information for each sale.<li>
-    <li>- <code>LEFT JOIN members mm ON s.customer_id = mm.customer_id</code>: This left join connects the <code>"sales"</code> and <code>"members"</code> tables based on the <code>"customer_id"</code> column, allowing us to determine whether a customer is a member.</li>
-  <li>The <code>CASE</code> statement is used to determine the membership status ("<code>member</code>" column) for each customer based on the following conditions:<li>
-    <li>- If there is no matching join with the "<code>members</code>" table (<code>mm.join_date IS NULL</code>), the customer is marked as 'N' (not a member).<li>
-    <li>- If the order date is earlier than the join date (<code>s.order_date < mm.join_date</code>), the customer is also marked as 'N' (not a member).<li>
-    <li>- Otherwise, the customer is marked as 'Y' (a member).<li>
+  <li>It joins these tables using different join types:
+    <ul>
+      <li><code>JOIN menu m ON s.product_id = m.product_id</code>: This inner join links the <code>"sales"</code> and <code>"menu"</code> tables based on the <code>"product_id"</code> column to retrieve product-related information for each sale.</li>
+      <li><code>LEFT JOIN members mm ON s.customer_id = mm.customer_id</code>: This left join connects the <code>"sales"</code> and <code>"members"</code> tables based on the <code>"customer_id"</code> column, allowing us to determine whether a customer is a member.</li>
+    </ul>
+  </li>
+  <li>The <code>CASE</code> statement is used to determine the membership status ("<code>member</code>" column) for each customer based on the following conditions:
+    <ul>
+      <li>If there is no matching join with the <code>"members"</code> table (<code>mm.join_date IS NULL</code>), the customer is marked as 'N' (not a member).</li>
+      <li>If the order date is earlier than the join date (<code>s.order_date &lt; mm.join_date</code>), the customer is also marked as 'N' (not a member).</li>
+      <li>Otherwise, the customer is marked as 'Y' (a member).</li>
+    </ul>
+  </li>
   <li>The result set includes columns for "<code>customer_id</code>," "<code>order_date</code>," "<code>product_name</code>," "<code>price</code>," and "<code>member</code>."</li>
   <li>The result is ordered by "<code>customer_id</code>," "<code>order_date</code>," and "<code>product_name</code>" to present the data in a structured manner.</li>
 </ul>
+
 
 <li><h5>Rank all the things</h5></li>
 
