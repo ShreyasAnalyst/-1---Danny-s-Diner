@@ -12,9 +12,8 @@
 
 <h1><a id="introduction">Introduction</a></h1>
 
-<p>Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favorite foods: sushi, curry and ramen.
-Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
-</p>
+<p>Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favorite foods: sushi, curry and ramen.</p>
+<p>Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.</p>
 
 <h1><a id="problem-statement">Problem Statement</a></h1>
 <p>Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favorite. Having this deeper connection with his customers will help him deliver a better and more personalized experience for his loyal customers.
@@ -59,6 +58,24 @@ ORDER BY 2 DESC;
   <li>The <code>SUM(m.price)</code> function is used to calculate the total amount spent by each customer. It sums up the <code>"price"</code> column from the <code>"menu"</code> table for each customer's purchases.</li>
   <li>The result set is grouped by the <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the total amount spent for each unique customer.</li>
   <li>The result is then ordered in descending order based on the <code>"amount_spent"</code> column (<code>ORDER BY 2 DESC</code>), so the customers who spent the most appear at the top of the result set.</li>
+  <li>The query begins by selecting data from the <code>"sales"</code> table.</li>
+  <li>It uses the <code>COUNT(DISTINCT order_date)</code> function to count the number of distinct order dates for each customer. This essentially counts how many different days each customer has visited the restaurant.</li>
+  <li>The result set is grouped by the <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the count of distinct order dates for each unique customer.</li>
+  <li>The result is then ordered in descending order based on the <code>"days_visited"</code> column (<code>ORDER BY 2 DESC</code>), so customers who have visited the most days appear at the top of the result set.</li>
+</ul>
+
+<li><h5>How many days has each customer visited the restaurant?</h5></li>
+
+```sql
+SELECT
+	customer_id,
+	COUNT(DISTINCT order_date) days_visited
+FROM
+	sales
+GROUP BY 1
+ORDER BY 2 DESC;
+```
+<ul>
   <li>The query begins by selecting data from the <code>"sales"</code> table.</li>
   <li>It uses the <code>COUNT(DISTINCT order_date)</code> function to count the number of distinct order dates for each customer. This essentially counts how many different days each customer has visited the restaurant.</li>
   <li>The result set is grouped by the <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the count of distinct order dates for each unique customer.</li>
