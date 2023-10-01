@@ -2,15 +2,15 @@
 <img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/cover%20page.png">
 <h1>Contents</h1>
 <ul>
-  <li><a href="introduction">Introduction</a></li>
-  <li><a href="problem-statement">Problem Statement</a></li>
-  <li><a href="entity-relationship">Entity Relationship Diagram</a></li>
-  <li><a href="case-study">Case Study Questions & Solutions</a></li>
-  <li><a href="bonus-question">Bonus Questions & Solutions</a></li>
-  <li><a href="insights">Key Insights</a></li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#problem-statement">Problem Statement</a></li>
+  <li><a href="#entity-relationship">Entity Relationship Diagram</a></li>
+  <li><a href="#case-study">Case Study Questions & Solutions</a></li>
+  <li><a href="#bonus-question">Bonus Questions & Solutions</a></li>
+  <li><a href="#insights">Key Insights</a></li>
 </ul>
 
-<h1><a id="INTRODUCTION">Introduction</a></h1>
+<h1><a id="introduction">Introduction</a></h1>
 
 <p>Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favorite foods: sushi, curry and ramen.
 Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
@@ -35,7 +35,7 @@ You can inspect the entity relationship diagram and example data below.<p>
 <img width="500" alt="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/Schema_diagram.png">
 
 
-<h1><a id="CASE-STUDY-QUESTIONS-WITH-SOLUTIONS">Problem Statement</a></h1>
+<h1><a id="case-study">Problem Statement</a></h1>
 
 <ol>
   <li><h5>What is the total amount each customer spent at the restaurant?</h5></li>
@@ -304,7 +304,7 @@ ORDER BY points DESC;
   <li>The result is ordered in descending order based on the <code>"points"</code> column (<code>ORDER BY points DESC</code>), so customers with the most points appear at the top of the result set.</li>
 </ul>
 
-<h1><a id="ENTITY-RELATIONSHIP-DIAGRAM">BONUS QUESTIONS WITH SOLUTIONS</a></h1>
+<h1><a id="bonus-questio">BONUS QUESTIONS WITH SOLUTIONS</a></h1>
 
 <ol>
 
@@ -375,4 +375,4 @@ FROM
 
 <img width="500" alt="Coding" src="">
 
-<h1><a id="ENTITY-RELATIONSHIP-DIAGRAM">BONUS QUESTIONS WITH SOLUTIONS</a></h1>
+<h1><a id="insights">Key Insights</a></h1>
