@@ -35,10 +35,8 @@ You can inspect the entity relationship diagram and example data below.<p>
 
 
 <h1><a id="case-study">Case Study Questions & Solutions</a></h1>
-
-<ol>
 	
-  <li><h5>What is the total amount each customer spent at the restaurant?</h5></li>
+  <li><h5>1. What is the total amount each customer spent at the restaurant?</h5></li>
 	
 ```sql
 SELECT 
@@ -60,7 +58,7 @@ ORDER BY 2 DESC;
   <li>The result set is grouped by the <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the total amount spent for each unique customer.</li>
   <li>The result is then ordered in descending order based on the <code>"amount_spent"</code> column (<code>ORDER BY 2 DESC</code>), so the customers who spent the most appear at the top of the result set.</li>
 
-<li><h5>How many days has each customer visited the restaurant?</h5></li>
+<li><h5>2. How many days has each customer visited the restaurant?</h5></li>
 
 ```sql
 SELECT
@@ -78,7 +76,7 @@ ORDER BY 2 DESC;
   <li>The result is then ordered in descending order based on the <code>"days_visited"</code> column (<code>ORDER BY 2 DESC</code>), so customers who have visited the most days appear at the top of the result set.</li>
 </ul>
 
-<li><h5>What was the first item from the menu purchased by each customer?</h5></li>
+<li><h5>3. What was the first item from the menu purchased by each customer?</h5></li>
 
 ```sql
 WITH CTE AS (
@@ -108,7 +106,7 @@ WHERE
   <li>It filters the results to only include rows where the row number (<code>rn</code>) is equal to 1. This ensures that only the first item purchased by each customer is included in the result.</li>
 </ul>
 
-<li><h5>What is the most purchased item on the menu and how many times was it purchased by all customers?</h5></li>
+<li><h5>4. What is the most purchased item on the menu and how many times was it purchased by all customers?</h5></li>
 
 ```sql
 SELECT
@@ -132,7 +130,7 @@ LIMIT 1;
   <li>The <code>LIMIT 1</code> clause ensures that only the top result (most purchased item) is returned.</li>
 </ul>
 
-<li><h5>Which item was the most popular for each customer?</h5></li>
+<li><h5>5. Which item was the most popular for each customer?</h5></li>
 
 ```sql
 WITH CTE AS(
@@ -163,7 +161,7 @@ WHERE rn = 1;
 </ul>
 
 
-<li><h5>Which item was purchased first by the customer after they became a member?</h5></li>
+<li><h5>6. Which item was purchased first by the customer after they became a member?</h5></li>
 
 ```sql
 WITH CTE AS (
@@ -197,7 +195,7 @@ WHERE
   <li>It filters the results to only include rows where the row number (<code>rn</code>) is equal to 1. This ensures that only the first item purchased by each customer after becoming a member is included in the result.</li>
 </ul>
 
-<li><h5>Which item was purchased just before the customer became a member?</h5></li>
+<li><h5>7. Which item was purchased just before the customer became a member?</h5></li>
 
 ```sql
 WITH CTE AS (
@@ -232,7 +230,7 @@ WHERE
   <li>It filters the results to only include rows where the row number (<code>rn</code>) is equal to 1. This ensures that only the first item purchased by each customer after becoming a member is included in the result.</li>
 </ul>
 
-<li><h5>What is the total items and amount spent for each member before they became a member?</h5></li>
+<li><h5>8. What is the total items and amount spent for each member before they became a member?</h5></li>
 
 ```sql
 SELECT 
@@ -260,7 +258,7 @@ GROUP BY 1;
   <li>The results are grouped by <code>"customer_id"</code> (<code>GROUP BY 1</code>), ensuring that the aggregates are calculated for each unique customer.</li>
 </ul>
 
-<h5><li>If each $1 spendt equates to 10 points and sushi has a 2x points multiplier how many points would each customer have?</li></h5>
+<h5><li>9. If each $1 spendt equates to 10 points and sushi has a 2x points multiplier how many points would each customer have?</li></h5>
 
 ```sql
 SELECT 
@@ -295,7 +293,7 @@ ORDER BY points DESC;
 </ul>
 
 
-<li><h5>In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi how many points do customer A and B have at the end of January?</h5></li>
+<li><h5>10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi how many points do customer A and B have at the end of January?</h5></li>
 
 ```sql
 SELECT 
@@ -333,8 +331,6 @@ ORDER BY points DESC;
 </ul>
 
 <h1><a id="bonus-question">BONUS QUESTIONS WITH SOLUTIONS</a></h1>
-
-<ol>
 
 <li>Join all the things</li>
 
