@@ -50,13 +50,17 @@ ORDER BY 2 DESC;
 ```
 
 <h6>Solution:</h6>
+
 <img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/1.png">
+
 <ul>
   <li>The query begins by selecting data from the <code>"sales"</code> table (aliased as <code>'s'</code>) and the <code>"menu"</code> table (aliased as <code>'m'</code>).</li>
   <li>It uses a <code>JOIN</code> clause to combine data from these two tables, matching records based on the <code>"product_id"</code> column in both tables.</li>
   <li>The <code>SUM(m.price)</code> function is used to calculate the total amount spent by each customer. It sums up the <code>"price"</code> column from the <code>"menu"</code> table for each customer's purchases.</li>
-  <li>The result set is grouped by the <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the total amount spent for each unique customer.</li>
+  <li>The result set is grouped by <code>"customer_id"</code> (<code>GROUP BY 1</code>), which means that it calculates the total amount spent for each unique customer.</li>
   <li>The result is then ordered in descending order based on the <code>"amount_spent"</code> column (<code>ORDER BY 2 DESC</code>), so the customers who spent the most appear at the top of the result set.</li>
+</ul>
+
 
 <li><h5>2. How many days has each customer visited the restaurant?</h5></li>
 
