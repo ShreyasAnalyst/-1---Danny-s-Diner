@@ -35,7 +35,7 @@ You can inspect the entity relationship diagram and example data below.<p>
 <img width="500" alt="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/Schema_diagram.png">
 
 
-<h1><a id="case-study">Problem Statement</a></h1>
+<h1><a id="case-study">Case Study Questions & Solutions</a></h1>
 
 <ol>
   <li><h5>What is the total amount each customer spent at the restaurant?</h5></li>
