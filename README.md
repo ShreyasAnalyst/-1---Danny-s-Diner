@@ -338,7 +338,8 @@ ORDER BY points DESC;
 </ol>
 <h1><a id="bonus-question">BONUS QUESTIONS WITH SOLUTIONS</a></h1>
 
-<li>Join all the things</li>
+<ul>
+<li><h5>Join all the things</h5></li>
 
 ```sql
 SELECT 
@@ -381,6 +382,7 @@ ORDER BY 1,2,3;
 
 
 <li><h5>Rank all the things</h5></li>
+</ul>
 
 ```sql
 WITH CTE AS (
