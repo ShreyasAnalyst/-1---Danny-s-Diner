@@ -105,7 +105,7 @@ FROM
 WHERE 
   rn = 1;
 ```
-<img width="500" alt="Coding" src="[https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/2.png](https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/3.png)">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/3.png">
 
 <ul>
   <li>The query utilizes a Common Table Expression (CTE) named <code>"CTE"</code> to simplify the process.</li>
