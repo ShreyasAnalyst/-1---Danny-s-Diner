@@ -429,3 +429,26 @@ FROM
 <img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/b.png">
 
 <h1><a id="insights">Key Insights</a></h1>
+
+1. Customer A & Customer B should be the priority as they are the customers who spent the most at the Restaurant. We can give them a VIP Pass, which will make them feel special.
+
+2. Customer B is the person who visits the Restaurant the most times (i.e. 6 Times), followed by Customer A (i.e. 4 Times).
+
+3. Customer C spent the least amount of money and also visited the least compared to other customers. We can send Customer C something like a gift or discount coupons to give him a little boost.
+
+4. Curry is the first item which was ordered by both the VIP customers.
+
+5. Customer C never ordered Curry, and we should suggest he order curry. We can convince Customer C to order Curry by giving huge discounts.
+
+6. Ramen is the most ordered & most popular item at the restaurant.
+
+7. After becoming a member, Customer A ordered Curry, and Customer B ordered Sushi.
+
+8. Both members ate Curry before becoming a member.
+
+9. Before becoming a member, Customer A spent $40, and Customer B spent $25.
+
+10. If ordering Sushi means 2x points & $1 means 10 points then, Customer A got 760 points, Customer B got 740 points, and Customer C got 360 points.
+
+11. If in the 1st week after becoming a member means 2x points & sushi means 2x points too then, Customer A got 1370 points, and Customer B got 820 points.
+
