@@ -31,7 +31,7 @@ Danny has shared with you 3 key datasets for this case study:
 You can inspect the entity relationship diagram and example data below.<p>
 
 <h1><a id="entity-relationship">Entity Relationship Diagram</a></h1>
-<img width="500" alt="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/Schema_diagram.png">
+<img width="500" alt="Coding" src="[https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/1.png](https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/Schema_diagram.png)">
 
 
 <h1><a id="case-study">Case Study Questions & Solutions</a></h1>
