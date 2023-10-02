@@ -74,6 +74,9 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
+
+<img width="500" alt="Coding" src="[https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/1.png](https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/2.png)">
+
 <ul>
   <li>The query begins by selecting data from the <code>"sales"</code> table.</li>
   <li>It uses the <code>COUNT(DISTINCT order_date)</code> function to count the number of distinct order dates for each customer. This essentially counts how many different days each customer has visited the restaurant.</li>
@@ -102,7 +105,7 @@ FROM
 WHERE 
   rn = 1;
 ```
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/2.png">
 
 <ul>
   <li>The query utilizes a Common Table Expression (CTE) named <code>"CTE"</code> to simplify the process.</li>
@@ -124,7 +127,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 1;
 ```
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/4.png">
 
 <ul>
   <li>The query begins by selecting data from the <code>"sales"</code> table (aliased as <code>'s'</code>) and the <code>"menu"</code> table (aliased as <code>'m'</code>).</li>
@@ -156,7 +159,7 @@ FROM CTE
 WHERE rn = 1;
 ```
 
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/5.png">
 
 <ul>
   <li>The query utilizes a Common Table Expression (CTE) named <code>"CTE"</code> to simplify the process.</li>
@@ -190,7 +193,7 @@ FROM CTE
 WHERE 
 	rn = 1;
 ```
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/6.png">
 
 <ul>
   <li>The query utilizes a Common Table Expression (CTE) named <code>"CTE"</code> to simplify the process.</li>
@@ -225,7 +228,7 @@ WHERE
 	rn = 1;
 ```
 
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/7.png">
 
 <ul>
   <li>The query utilizes a Common Table Expression (CTE) named <code>"CTE"</code> to simplify the process.</li>
@@ -251,7 +254,7 @@ WHERE
 GROUP BY 1;
 ```
 
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/8.png">
 
 <ul>
   <li>The query selects data from the <code>"sales"</code> table (aliased as <code>'s'</code>), the <code>"members"</code> table (aliased as <code>'mm'</code>), and the <code>"menu"</code> table (aliased as <code>'m'</code>).</li>
@@ -281,7 +284,7 @@ GROUP BY 1
 ORDER BY points DESC;
 ```
 
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/9.png">
 
 <ul>
   <li>The query begins by selecting data from the <code>"menu"</code> table (aliased as <code>'m'</code>) and the <code>"sales"</code> table (aliased as <code>'s'</code>).</li>
@@ -320,7 +323,7 @@ GROUP BY s.customer_id
 ORDER BY points DESC;
 ```
 
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/10.png">
 
 <ul>
   <li>The query begins by selecting data from the <code>"menu"</code> table (aliased as <code>'m'</code>), the <code>"sales"</code> table (aliased as <code>'s'</code>), and the <code>"members"</code> table (aliased as <code>'mm'</code>).</li>
@@ -359,7 +362,7 @@ FROM
 ORDER BY 1,2,3;
 ```
 
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/a.png">
 
 <ul>
   <li>The query retrieves data from three tables: <code>"sales"</code> (aliased as <code>'s'</code>), <code>"menu"</code> (aliased as <code>'m'</code>), and <code>"members"</code> (aliased as <code>'mm'</code>).</li>
@@ -423,6 +426,6 @@ FROM
 </ul>
 
 
-<img width="500" alt="Coding" src="">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/b.png">
 
 <h1><a id="insights">Key Insights</a></h1>
