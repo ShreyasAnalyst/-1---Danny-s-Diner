@@ -75,7 +75,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 ```
 
-<img width="500" alt="Coding" src="[https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/1.png](https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/2.png)">
+<img width="500" alt="Coding" src="https://github.com/ShreyasAnalyst/-1---Danny-s-Diner/blob/main/images/2.png">
 
 <ul>
   <li>The query begins by selecting data from the <code>"sales"</code> table.</li>
